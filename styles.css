@@ -1,8 +1,27 @@
 body{
     background:crimson;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.assignment{
+    display: inline-flex;
+    text-align: center;
+    padding: 10px;
+    background: black;
+    margin: 10px;
+}
+.assignment img{
+    width: 500px;
+    height: 500px;
+}
+
+p{
+    color:white
+}
+
+h2{
+    color: blue
+}
 h1 {
     color:rgb(0, 0, 0);
     text-align:center;
