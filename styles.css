@@ -1,5 +1,5 @@
 body{
-    background:crimson;
+    background: #00232a;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -7,7 +7,7 @@ body{
     display: inline-flex;
     text-align: center;
     padding: 10px;
-    background: black;
+    background: #00424d;
     margin: 10px;
 }
 .assignment img{
@@ -15,14 +15,17 @@ body{
     height: 500px;
 }
 
+a{
+    text-decoration: none;
+}
 p{
-    color:white
+    color:#FFFABF
 }
 
 h2{
-    color: blue
+    color: #FFFABF
 }
 h1 {
-    color:rgb(0, 0, 0);
+    color:#FFFABF;
     text-align:center;
 }
