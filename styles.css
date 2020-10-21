@@ -9,10 +9,15 @@ body{
     padding: 10px;
     background: #00424d;
     margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 10px #FFFABF;
 }
+
 .assignment img{
     width: 500px;
     height: 500px;
+    border-radius: 5px;
 }
 
 a{
