@@ -13,7 +13,9 @@ body{
     border-radius: 5px;
     box-shadow: 5px 10px #FFFABF;
 }
-
+.assignments{
+    display: flex;
+}
 .assignment img{
     width: 500px;
     height: 500px;
