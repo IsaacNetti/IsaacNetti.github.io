@@ -4,7 +4,7 @@ body{
 }
 
 .assignment{
-    display: inline-flex;
+    display: flex;
     text-align: center;
     padding: 10px;
     background: #00424d;
@@ -13,9 +13,7 @@ body{
     border-radius: 5px;
     box-shadow: 5px 10px #FFFABF;
 }
-.assignments{
-    display: flex;
-}
+
 .assignment img{
     width: 500px;
     height: 500px;
