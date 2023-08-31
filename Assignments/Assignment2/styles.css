@@ -1,0 +1,53 @@
+/* Isaac Netti CSCE 242*/
+
+/* Background and text formatting */
+body{
+    background-color: #313866;
+    color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #FE7BE5;
+}
+h2{
+    color: #FE7BE5;
+}
+
+/* Hyperlink formatting */
+a{
+    color:#FE7BE5;
+    background-color: #504099;
+}
+
+a:hover{
+    color: white;
+}
+
+img{
+    border: 5px solid #FE7BE5;
+}
+
+/*Table and image*/
+.table {
+    padding: 5px;
+    background-color: #504099;
+}
+th{
+    border: 5px solid #FE7BE5;
+}
+td{
+    border: 1px solid #FE7BE5;
+}
+.container{
+    display: grid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+.image{
+    margin-left: 100%;
+    margin-right: 0%;
+}
