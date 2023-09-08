@@ -1,32 +1,57 @@
 /* Isaac Netti CSCE 242*/
 
-/* Background and text formatting */
+/* Structure */
 body{
     background-color: #352F44;
     color: #FAF0E6;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 90%;
+}
+
+.assignments-block{
+    background-color: #B9B4C7;
+    padding: 10px;
+    margin: 15px 0px;
+    color: #352F44;
+    align-items: center;
+}
+
+.assignments-block h2,.assignments-block p{
+    text-align: center;
+}
+.assignments-block img{
+    display: block;
+    margin: auto;
+    width: 80%;
+   }
+
+/* Typography */
+
+#main-header h1{
+    text-align: center;
+}
+#assignments-header{
+    text-align: center;
 }
 a{
     text-decoration: none;
-    color: #B9B4C7;
+    color: #352F44;
     
 }
 a:hover{
     color: #FAF0E6;
 }
 
-.container{
-    display: grid;
-    margin: auto;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-}
-.paragraph{
-    margin-top: 20%;
-    margin-left: 30%;
-}
-.assignmentsHeader,.assignmentsList{
-    margin-left: 50%;
-    margin-right: 0%;
+
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    #main-assignments{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    .assignments-block{
+        max-width: 30%;
+    }
 }
