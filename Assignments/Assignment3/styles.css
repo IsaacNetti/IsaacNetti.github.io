@@ -1,0 +1,97 @@
+/* Isaac Netti CSCE242 */
+
+/* Structure */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 80%;
+}
+#top-text{
+    margin: 5px 0px;
+}
+
+/* Main Content */
+#col2of3, #col1of3{
+    background-color: lightblue;
+}
+#col1of3{
+    margin: 0% 0% 0% 2%;
+}
+#col2of3 h1, #col2of3 p, #col1of3 h2{
+    padding: 0px 5px;
+}
+
+/* Main Columns */
+.col1of2{
+    background-color: rgb(185, 238, 185);
+    border: solid rgb(67, 111, 255) 1px;
+    margin: 2% 1% 2% 1%;
+}
+.col1of3{
+    background-color: rgb(67, 111, 255);
+    color:aliceblue;
+    margin: 0% 6% 1% 6%;
+}
+.col1of3 h2{
+    text-align: center;
+    padding: 3px;
+}
+/* Main Nav */
+#main-nav{
+    background-color: rgb(51, 51, 51);
+}
+#main-nav li{
+    list-style-type: none;
+    padding: 2% 5%;
+}
+#main-nav a{
+    text-decoration: none;
+    font-size:larger;
+    color:aliceblue;
+
+}
+
+
+/* Main Footer */
+#main-footer{
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+}
+/* Typography */
+
+#top-text, #footer-text{
+    text-align: center;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    #main-nav ul, #main-content, #main-columns, #main-pictures, .flex-container{
+        display: flex;
+    }
+    .col1of3{
+        display:inline-flex;
+        flex: 33%
+    }
+    #main-pictures{
+        justify-content: center;
+        justify-content: space-around;
+        flex:1;
+    }
+    .col1of2{
+        flex:1;
+    }
+    #col2of3{
+        flex: 75%;
+    }
+    #col1of3{
+        flex: 25%;
+    }
+    .flex-container{
+        flex-direction: row-reverse;
+        justify-content:space-around;
+    }
+}
