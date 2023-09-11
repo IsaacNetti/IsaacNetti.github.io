@@ -1,0 +1,249 @@
+/* Isaac Netti CSCE242 */
+
+/* Structure */
+a {
+    text-decoration: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main header */
+#main-header{
+    background-color: #000000 ;
+    color: #FFFFFF;
+}
+#main-header img{
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#main-header span{
+    padding-right: 40%;
+}
+#search-box{
+    justify-self: right;
+}
+/* main nav */
+#main-nav{
+    background-color: #73000A;
+    color: #FFFFFF;
+}
+#main-nav ul {
+    padding-left: 0px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type:none;
+    margin: 5px 5px;
+}
+#main-nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: #FFFFFF;
+}
+
+/* Main one */
+#main-one h2,#main-one p{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+#main-one h1{
+    margin-left: 10%;
+    background-color: #73000A;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+/* Main two */
+#main-two-text{
+    background-color: #73000A;
+    color: #FFFFFF;
+}
+#main-two-text h1{
+    padding-top: 40%;
+    padding-bottom: 10px;
+}
+#main-two-text h1, #main-two-text p{
+    width: 80%;
+    margin: auto;
+}
+
+/* Main three */
+.red-button{
+    background-color: #73000A;
+    border: solid #FFFFFF 2px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+#main-three-text h1{
+    padding-top: 10%;
+    padding-bottom: 10px;
+}
+#main-three-text p{
+    padding-bottom: 50px;
+}
+#main-three-text a{
+    margin-left: 10%;
+}
+#main-three-text{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#main-three-text h1, #main-three-text p{
+    width: 80%;
+    margin: auto;
+}
+
+/* Main four */
+#main-four{
+    background-color: #ECECEC;
+}
+#main-four h1{
+    color: #73000A;
+    padding-top: 10%;
+}
+#main-four p{
+    padding-bottom: 5%;
+}
+#main-four-text{
+    padding-left: 5%;
+}
+
+/* Main five */
+#main-five h1{
+    text-align: center;
+    color: #73000A;
+}
+#main-research-blocks{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+#main-research-blocks h2{
+    color: #73000A;
+}
+#main-research-blocks p{
+    max-width: 200px;
+}
+
+/* Main six */
+.black-button{
+        background-color: #000000;
+        border: solid #FFFFFF 2px;
+        color: #FFFFFF;
+        padding: 5px;
+}
+#main-six-text{
+    background-color: #73000A;
+    color: #FFFFFF;
+}
+#main-six-text h1{
+    padding-top: 10%;
+    padding-bottom: 10px;
+}
+#main-six-text p{
+    padding-bottom: 50px;
+}
+#main-six-text h1, #main-six-text p{
+    width: 80%;
+    margin: auto;
+}
+#main-six-text a{
+    margin-left: 10%;
+}
+
+/* Main seven */
+#main-seven{
+    width: 90%;
+    margin: auto;
+}
+#main-seven-text h1{
+    color: #73000A;
+}
+#main-seven-text p{
+    padding-bottom: 15px;
+}
+
+/* Main Eight */
+#main-eight-text{
+    background-color: #1F414D;
+    color: #FFFFFF;
+}
+#main-eight-text h1, #main-eight-text p{
+    width: 80%;
+    margin: auto;
+}
+#main-eight-text a{
+    margin-left: 10%;
+}
+#main-eight-text h1{
+    padding-top: 10%;
+    padding-bottom: 10px;
+}
+#main-eight-text p{
+    padding-bottom: 50px;
+}
+
+/* Main Nine */
+#main-nine{
+    background-image: url("https://place-hold.it/1800x1800/666");
+    padding: 300px 300px 100px 100px;
+}
+#main-nine-text{
+    background-color: #73000A;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+/* Main Ten */
+#main-ten-text h1{
+    color: #73000A;
+    padding-top: 10%;
+    padding-bottom: 10px;
+}
+#main-ten-text p{
+    padding-bottom: 50px;
+}
+#main-ten-text h1, #main-ten-text p{
+    width: 80%;
+    margin: auto;
+}
+#main-ten-text a{
+    margin-left: 10%;
+}
+
+/* Main Footer */
+#main-footer, #main-footer a {
+    color: white; 
+}
+#main-footer img {
+    padding-top: 10px;
+}
+#main-footer li {
+    list-style-type: none;
+}
+#main-footer{
+    width: 90%;
+    margin: auto;
+    padding: 0px 100px 0px 100px;
+    background-color: #73000A;
+}
+.col1of2{
+    padding: 5px;
+}
+
+
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    .flex-container, #main-nav ul{
+        display: flex;
+    }
+    .col1of2 {
+        flex: 1;
+    }
+}
