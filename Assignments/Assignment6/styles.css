@@ -1,0 +1,60 @@
+/* Isaac Netti CSCE242 */
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header,footer{
+    background-color: #E5D283 ;
+    margin: 50px;
+}
+main{
+    background-color: #213555;
+    margin: 50px;
+}
+.col1of3 div {
+    background-color: #4F709C;
+    padding: 20px;
+    margin: 20px ;
+}
+h1{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+.dance{
+    position: relative;
+    animation-name: dancing;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes dancing{
+    0%{
+        top: 0px;
+    }
+    25%{
+        top: 80px;
+        left: 10px
+    }
+    50%{
+        top: 0px;
+        left: 20px;
+    }
+    75%{
+        top: 80px;
+        left: 10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    .col1of3{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
