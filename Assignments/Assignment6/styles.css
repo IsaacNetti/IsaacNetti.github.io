@@ -30,6 +30,14 @@ h1{
     animation-duration: 2s;
     animation-iteration-count: 2;
 }
+
+.review-box{
+    border: solid #213555 2px;
+    background-color: #E5D283 !important;
+}
+.review-box h2{
+    color: #213555;
+}
 @keyframes dancing{
     0%{
         top: 0px;
