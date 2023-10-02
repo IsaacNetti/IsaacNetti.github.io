@@ -1,0 +1,55 @@
+/* Isaac Netti CSCE242 */
+
+/* Structure */
+:root{
+    --gradient: 0%;
+    --step: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+#track{
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 40%;
+    justify-content: center;
+    
+}
+#track h1{
+    justify-content: center;
+}
+
+#step1, #step2{
+    margin-left: var(--step);
+}
+#fund-raising{
+    background-color: cornflowerblue;
+    padding: 50px;
+}
+
+#rectangle{
+    background: rgb(36,0,36);
+    background: linear-gradient(0deg, rgba(36,0,36,1) var(--gradient), rgba(255,255,255,1) var(--gradient));
+    margin: auto;
+    margin-top: 20px;
+    height: 200px;
+    width: 50px;
+}
+
+.hide{
+    display: none;
+}
+
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    .col1of2{
+        display: flex;
+        flex:50%;
+        justify-content: space-around;
+    }
+}
