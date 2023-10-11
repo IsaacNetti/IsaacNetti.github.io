@@ -10,6 +10,15 @@ body {
 h1{
     color: #E25822 ;
 }
+header{
+    max-width: 90%;
+    margin: auto;
+}
+#main-content-home div{
+     justify-content: center;
+     margin-top: 8%;
+     margin-bottom: 5%;
+}
 /* Main Navigation */
 
 #main-nav ul {
@@ -27,17 +36,29 @@ h1{
 }
   
 #main-nav li:hover {
-    background-color: lightblue;
+    background-color: #10316B;
 }
   
-
 /* Larger Resolution */
 @media only screen and (min-width: 768px) {
     #main-nav li {
         display: inline-block;
       }
-    .col1of2{
+      .flex-container {
         display: flex;
-        flex:1;
+        justify-content: space-around;
+        align-items: center;
+      }
+    .col1of2 {
+        display: flex;
+    }
+    #main-content-home h1{
+        max-width: 20%;
+        margin-right: 30%;
+    }
+    #main-content-home p{
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
     }
 }
