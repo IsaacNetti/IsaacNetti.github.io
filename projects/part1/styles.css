@@ -25,19 +25,19 @@ header{
     margin-top: 8%;
     margin-bottom: 5%;
 }
-#main-content-projects p{
+#main-content-projects p,#main-content-college p{
    max-width: 80%;
    margin: auto;
 }
 
-#main-content-projects img, #main-content-project img,#main-content-experiences img,#main-content-experience img{
+#main-content-projects img, #main-content-project img,#main-content-experiences img,#main-content-experience img, #main-content-college img,#main-content-class img,#main-content-activity img{
     display: block;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-#main-content-project h1,#main-content-experiences h1,#main-content-experience h1{
+#main-content-project h1,#main-content-experiences h1,#main-content-experience h1,#main-content-class h1,#main-content-activity h1{
     margin-top: 5%;
     text-align: center;
 }
