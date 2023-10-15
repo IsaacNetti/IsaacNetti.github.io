@@ -43,7 +43,24 @@ a:hover{
     color: #FAF0E6;
 }
 
-
+/* Main Navigation */
+#main-nav ul {
+    text-align: center;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type: none;
+    margin: 0%  6% ;
+}
+  
+a {
+    text-decoration: none;
+    color: #ECECEB;
+}
+  
+#main-nav li:hover {
+    background-color: #10316B;
+}
 /* Larger Resolution */
 @media only screen and (min-width: 768px) {
     #main-assignments{
@@ -51,6 +68,9 @@ a:hover{
         justify-content: space-around;
         flex-flow: row wrap;
     }
+    #main-nav li {
+        display: inline-block;
+      }
     .assignments-block{
         max-width: 30%;
     }
