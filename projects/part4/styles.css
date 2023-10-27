@@ -2,11 +2,28 @@
 
 /* Structure */
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("images/clouds.gif");
+    background-size: 100%; */
     background-color: #000000;
     color: #ECECEB;
 }
+
+body::before {    
+    content: "";
+    background-image: url("images/clouds-test.gif");
+    background-size: cover;
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 h1{
     color: #E25822 ;
 }
@@ -52,18 +69,17 @@ header{
     margin-top: 5%;
     text-align: center;
 }
-#main-content-project-add{
+#main-content-project-add h1{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
-#main-content-project-add *{
-    margin: 2%;
-}
+
 #main-content-experiences p{
     max-width: 70%;
     margin: auto;
 }
-#main-content-experiences h2{
+#main-content-experiences h2,#main-content-contact h1{
     max-width: 90%;
     margin: auto;
 }
@@ -87,7 +103,13 @@ form textarea {
 form label {
     display: block;
 }
-  
+
+#txt-project-description{
+    height: 100px;
+}
+#main-content-project-add form input{
+    width: 30%;
+}
 /* Main Navigation */
 
 #main-nav ul {
@@ -98,6 +120,7 @@ form label {
     list-style-type: none;
     padding: .5%;
     margin: 0%  6% ;
+    border-bottom: transparent solid 2px;
 }
   
 a {
@@ -107,7 +130,7 @@ a {
 
 
 #main-nav li:hover {
-    background-color: #10316B;
+    border-bottom: #E25822 solid 2px;
     padding: .5%;
 }
 
@@ -143,9 +166,12 @@ a {
    
     /* Form */
     form {
-        margin-left: 40%;
+        margin-left: 42%;
     }
     form button{
         margin-left: 7%;
+    }
+    #main-content-project-add form {
+        width: 30%;
     }
 }
