@@ -1,3 +1,5 @@
+
+//Form Management
 const showEmailResult = async (e) => {
     e.preventDefault();
     const result = document.getElementById("result");

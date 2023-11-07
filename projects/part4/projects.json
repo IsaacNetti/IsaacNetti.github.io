@@ -12,9 +12,40 @@
         "type":"project"
     },
     {
-        "title":"",
-        "img-url":"",
-        "description":"",
-        "type":""
+        "title":"Hardware Cpu",
+        "img-url":"images/project3.png",
+        "description":"In my CSCE 611 class I built a functioning cpu fom scratch! Using System verilog and a programable Alterra board, I designed a Cpu capable of runninng all of the RISC-V assembly instructions",
+        "type":"project"
+    },
+    {
+        "title":"More to come!!",
+        "img-url":"images/project4.png",
+        "description":"I am constantly working on new and exciting projects, I will continue to expand this page as I go Keep checking in and see what I am working on!! ",
+        "type":"project"
+    },
+    {
+        "title":"CSCE 242",
+        "img-url":"images/class1.png",
+        "description":"CSCE 242! This class focused on html, css and javascript. it taught me how to fully devolp a pretty looking website from beginning to end all while keeping my code organized and effiecient. The professor of this one is my favorite!",
+        "type":"class"
+    },
+    {
+        "title":"CSCE 611",
+        "img-url":"images/class2.png",
+        "description":"CSCE 611 is Advanced Digital Design, In this class I learned so much about the hardware of computers by designing my own cpu from scratch! It is so nice to have such knowledge and has made me appreciate the things that I use every single day!",
+        "type":"class"
+    },
+    {
+        "title":"USC STEM Career fair",
+        "img-url":"images/activity1.png",
+        "description":"USC STEM Carrer fair! I went to the carrer fair and met with a bunch of employers! my favorite of which was capgemini. I began apllying to a bunch of programs, networking, and getting my name out there! I am so excited to get into the world of computers!",
+        "type":"activity"
+    },
+    {
+        "title":"More to come!!",
+        "img-url":"images/activity2.png",
+        "description":"I am always on the lookout for new and exciting events on the horizon. Any more fun and exciting activities I go to will go here with everything I learn from them!",
+        "type":"activity"
     }
+
 ]

@@ -1,3 +1,4 @@
+//Form management
 const showEmailResult = async (e) => {
     e.preventDefault();
     const result = document.getElementById("result");
@@ -33,7 +34,28 @@ const showEmailResult = async (e) => {
         "Sorry your email couldn't be sent";
     }
   };
-  
+
+//parse JSON
+const getprojects = async () => {
+  const url = "/home/isaacnetti/IsaacNetti.github.io/projects/part4/projects.json";
+
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+const showprojects = async () => {
+  const projects = await getprojects();
+  const projectSection = document.getElementById("project-body");
+
+  projects.forEach((project) =>
+    projectSection.append(getprojectItem(project))
+  );
+};
+
 window.onload = () => {
+    showprojects();
     document.getElementById("contact-form").onsubmit = showEmailResult;
 }
