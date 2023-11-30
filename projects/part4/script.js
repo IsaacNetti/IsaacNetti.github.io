@@ -46,6 +46,17 @@ const getprojects = async () => {
     console.log(error);
   }
 };
+const getexperiences = async () => {
+  const url = "https://IsaacNetti.github.io/projects/part4/experience.json";
+
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 const showprojects = async () => {
   const projects = await getprojects();
   const projectSection = document.getElementById("main-content-projects");
@@ -132,7 +143,57 @@ const getActivityItem = (project) => {
   return div;
 }
 
+const showexperience = async () => {
+  const experiences = await getexperiences();
+  const experienceSection = document.getElementById("main-content-experiences");
+
+  experiences.forEach((experience) =>{
+    if (experienceSection){
+      experienceSection.append(getExperienceItem(experience))
+    }
+  }
+  );
+};
+
+const getExperienceItem = (project) => {
+  const div = document.createElement("div");
+  const a = document.createElement("a");
+  a.href = "experiences-page.html";
+  div.append(a);
+
+  const h1 = document.createElement("h1");
+  h1.innerHTML = project.title;
+  a.append(h1);
+
+  const img = document.createElement("img");
+  img.src = project.img;
+  a.append(img);
+
+  const h21 = document.createElement("h2");
+  h21.innerHTML = "Job Description";
+  a.append(h21);
+  
+  const p = document.createElement("p");
+  p.innerHTML = project.description;
+  a.append(p); 
+
+  const h22 = document.createElement("h2");
+  h22.innerHTML = "Skills Acquired";
+  a.append(h22);
+
+  const ul = document.createElement("ul");
+  a.append(ul);
+
+  project.skills.forEach((skill)=>{
+    let li = document.createElement("li");
+    li.innerHTML = skill;
+    ul.append(li);
+  })
+
+  return div;
+}
 window.onload = () => {
     showprojects();
+    showexperience();
     document.getElementById("contact-form").onsubmit = showEmailResult;
 }
