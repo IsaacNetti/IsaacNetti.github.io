@@ -157,6 +157,7 @@ const showexperience = async () => {
 
 const getExperienceItem = (project) => {
   const div = document.createElement("div");
+  div.classList.add("col1of4");
   const a = document.createElement("a");
   a.href = "experiences-page.html";
   div.append(a);
