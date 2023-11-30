@@ -94,6 +94,10 @@ header{
 #main-content-college h1{
     text-align: center;
 }
+#main-content-projects h2,#main-content-college h2{
+    color: #E25822;
+    text-align: center;
+}
 /* Form */
 form input{
     width: 200px;

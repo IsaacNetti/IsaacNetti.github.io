@@ -49,10 +49,18 @@ const getprojects = async () => {
 const showprojects = async () => {
   const projects = await getprojects();
   const projectSection = document.getElementById("main-content-projects");
+  const classSection = document.getElementById("main-content-college-class");
+  const activitySection = document.getElementById("main-content-college-activity");
 
   projects.forEach((project) =>{
-    if (project.type == "project"){
+    if (project.type == "project" && projectSection){
       projectSection.append(getProjectItem(project))
+    }
+    if(project.type == "class" && classSection){
+      classSection.append(getClassItem(project))
+    }
+    if(project.type == "activity" && activitySection){
+      activitySection.append(getActivityItem(project))
     }
   }
   );
@@ -65,13 +73,64 @@ const getProjectItem = (project) => {
   a.href = "project-page.html";
   div.append(a);
 
+  const h2 = document.createElement("h2");
+  h2.innerHTML = project.title;
+  a.append(h2);
+
   const img = document.createElement("img");
   img.src = project.img;
   a.append(img);
 
+  const p = document.createElement("p");
+  p.innerHTML = project.description;
+  a.append(p);  
+
   return div;
 }
 
+const getClassItem = (project) => {
+  const div = document.createElement("div");
+  div.classList.add("col1of4");
+  const a = document.createElement("a");
+  a.href = "college-class.html";
+  div.append(a);
+
+  const h2 = document.createElement("h2");
+  h2.innerHTML = project.title;
+  a.append(h2);
+
+  const img = document.createElement("img");
+  img.src = project.img;
+  a.append(img);
+
+  const p = document.createElement("p");
+  p.innerHTML = project.description;
+  a.append(p);  
+
+  return div;
+}
+
+const getActivityItem = (project) => {
+  const div = document.createElement("div");
+  div.classList.add("col1of4");
+  const a = document.createElement("a");
+  a.href = "college-activity.html";
+  div.append(a);
+
+  const h2 = document.createElement("h2");
+  h2.innerHTML = project.title;
+  a.append(h2);
+
+  const img = document.createElement("img");
+  img.src = project.img;
+  a.append(img);
+
+  const p = document.createElement("p");
+  p.innerHTML = project.description;
+  a.append(p);  
+
+  return div;
+}
 
 window.onload = () => {
     showprojects();
