@@ -1,13 +1,13 @@
 [
     {
         "title":"Regal Cinema - Floor Staff",
-        "img-url":"images/experience1.png",
+        "img":"images/experience1.png",
         "description":"This was my first job, I learned a lot at Regal! I was introduced into the world of customer service and began to understand what its like to manage responsibilities",
         "skills":["Maintained a clean and safe workspace","Used effective communication to ensure security of the building","Established connections and friendships that ensured future opportunities"]
     },
     {
         "title":"Subway - Night Manager",
-        "img-url":"images/experience2.png",
+        "img":"images/experience2.png",
         "description":"At subway, I trained and led the night and weekend crew. Making sure they were ready to face all the challenges they would encounter and creating a safe and effecient work environment that employees want to stay in.",
         "skills":["Manage and Monitor up to 5 employees.","Onboard and Train new employees","Securely handle thousands of dollars in cash transactions."]
     }
