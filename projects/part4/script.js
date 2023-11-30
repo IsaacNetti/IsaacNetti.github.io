@@ -37,7 +37,7 @@ const showEmailResult = async (e) => {
 
 //parse JSON
 const getprojects = async () => {
-  const url = "/home/isaacnetti/IsaacNetti.github.io/projects/part4/projects.json";
+  const url = "https://IsaacNetti.github.io/projects/part4/projects.json";
 
   try {
     const response = await fetch(url);
@@ -48,12 +48,30 @@ const getprojects = async () => {
 };
 const showprojects = async () => {
   const projects = await getprojects();
-  const projectSection = document.getElementById("project-body");
+  const projectSection = document.getElementById("main-content-projects");
 
-  projects.forEach((project) =>
-    projectSection.append(getprojectItem(project))
+  projects.forEach((project) =>{
+    if (project.type == "project"){
+      projectSection.append(getProjectItem(project))
+    }
+  }
   );
 };
+
+const getProjectItem = (project) => {
+  const div = document.createElement("div");
+  div.classList.add("col1of4");
+  const a = document.createElement("a");
+  a.href = "project-page.html";
+  div.append(a);
+
+  const img = document.createElement("img");
+  img.src = project.img;
+  a.append(img);
+
+  return div;
+}
+
 
 window.onload = () => {
     showprojects();

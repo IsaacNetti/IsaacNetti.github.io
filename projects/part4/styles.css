@@ -91,7 +91,9 @@ header{
     max-width: 90%;
     margin: auto;
 }
-
+#main-content-college h1{
+    text-align: center;
+}
 /* Form */
 form input{
     width: 200px;
