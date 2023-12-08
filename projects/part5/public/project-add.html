@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Isaac Netti CSCE 242 -->
+<html>
+    <head>
+        <title>Add Project</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+
+    <body>
+        <header id="main-header">
+            <a href="index.html"><h1>Isaac Netti :&#41 </h1></a>
+            <nav id="main-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="hide-small">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="projects.html"><li>Projects</li></a>
+                    <a href="experiences.html"><li>Experiences</li></a>
+                    <a href="college.html"><li>College life</li></a>
+                    <a href="contact.html"><li>Contact Me</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content-project-add">
+            <h1>New Project</h1>
+            <form id="add-project-form" method="post">
+                <p>
+                    <label for="title">Project Name:</label>
+                    <input type="text" id="title" name="title" required>
+                <p>
+                <h2>
+                    <label for="txt-project-description">Project Description:</label>
+                    <input type="text" id="txt-project-description" name="description" required>
+                </h2>
+                <h2>
+                <label for="file-project-img">Project image:</label>
+                <input type="file" id="file-project-img" name="img">
+                </h2>
+                <button type="submit">Add Project</button>
+            </form>
+    </main>
+    
+    </body>
+</html>

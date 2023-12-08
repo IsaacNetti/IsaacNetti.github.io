@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Isaac Netti CSCE 242 -->
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+
+    <body>
+        <header id="main-header">
+            <a href="index.html"><h1>Isaac Netti :&#41 </h1></a>
+            <nav id="main-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="hide-small">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="projects.html"><li>Projects</li></a>
+                    <a href="experiences.html"><li>Experiences</li></a>
+                    <a href="college.html"><li>College life</li></a>
+                    <a href="contact.html"><li>Contact Me</li></a>
+                </ul>
+            </nav>
+        </header>
+
+	<main id="main-content-contact">
+        <div class="flex-container">
+            <img src="images/me.png" class="flex-container">
+            <h2>E-mail: isaacnetti@gmail</h2>
+            <h2>Phone number: (757)-528-0762</h2>
+            <h2>Github: IsaacNetti</h2>
+        </div>
+        <h1>I'd love to hear from you! For any business inquiries don't hesiate to send me an email. Lets get in touch !</h1>
+    </main>
+    
+    <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+    >
+        <input
+        type="hidden"
+        name="access_key"
+        value="eec7c4a3-3f2a-4dfc-a2c1-de37ba80eaef"
+        />
+
+        <p>
+        <label for="name">Name:</label>
+        <input
+            id="name"
+            type="text"
+            placeholder="First and Last"
+            name="name"
+            required
+        />
+        </p>
+        <p>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required />
+        </p>
+        <p>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        </p>
+        <input
+        type="hidden"
+        name="redirect"
+        value="https://web3forms.com/success"
+        />
+        <input
+        type="hidden"
+        name="subject"
+        value="Contact from My Website"
+        />
+        <input type="hidden" name="from_name" value="My Website" />
+
+        <p>
+        <button type="submit">Send Message</button>
+        </p>
+
+        <p id="result"></p>
+    </form>
+    
+    </body>
+</html>
