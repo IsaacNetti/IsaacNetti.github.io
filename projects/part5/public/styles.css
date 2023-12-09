@@ -34,6 +34,9 @@ header{
 #delete-link {
     float: right;
 }
+#main-content-contact div{
+    text-align: center;
+}
 /* Home page */
 #main-content-home div{
      justify-content: center;
@@ -193,5 +196,10 @@ a {
     }
     #main-content-project-add form {
         width: 30%;
+    }
+    #main-content-contact img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
