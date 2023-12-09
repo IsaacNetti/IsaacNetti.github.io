@@ -93,14 +93,13 @@ showProjects = async() => {
     div.classList.add("col1of4");
     projectDiv.append(div);
 
-    const a = document.createElement("a");
-    a.href = "project-page.html";
-    div.append(a);
     const dLink = document.createElement("a");
-
     dLink.innerHTML = "	&#x2715;";
     div.append(dLink);
     dLink.id = "delete-link";
+
+    const a = document.createElement("a");
+    div.append(a);
 
     const h2 = document.createElement("h2");
     h2.innerHTML = project.title;
@@ -162,7 +161,6 @@ const getClassItem = (project) => {
   const div = document.createElement("div");
   div.classList.add("col1of4");
   const a = document.createElement("a");
-  a.href = "college-class.html";
   div.append(a);
 
   const h2 = document.createElement("h2");
@@ -184,7 +182,6 @@ const getActivityItem = (project) => {
   const div = document.createElement("div");
   div.classList.add("col1of4");
   const a = document.createElement("a");
-  a.href = "college-activity.html";
   div.append(a);
 
   const h2 = document.createElement("h2");
@@ -218,7 +215,6 @@ const getExperienceItem = (project) => {
   const div = document.createElement("div");
   div.classList.add("col1of4");
   const a = document.createElement("a");
-  a.href = "experiences-page.html";
   div.append(a);
 
   const h1 = document.createElement("h1");
@@ -267,7 +263,7 @@ const deleteProject = async(project) => {
 
   let result = await response.json();
   showProjects();
-  resetForm();
+  location.reload();
 }
 
 const addProject = async(e) => {

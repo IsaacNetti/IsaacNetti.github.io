@@ -35,7 +35,6 @@ app.get("/api/projects", (req, res) => {
 
 const getProjects = async (res) =>{
     const projects = await Project.find();
-    res.sendFile(__dirname + "public/index.html");
     res.send(projects);
 }
 

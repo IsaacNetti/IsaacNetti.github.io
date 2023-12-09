@@ -31,6 +31,9 @@ header{
     max-width: 90%;
     margin: auto;
 }
+#delete-link {
+    float: right;
+}
 /* Home page */
 #main-content-home div{
      justify-content: center;
