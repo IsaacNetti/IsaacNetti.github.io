@@ -35,11 +35,13 @@ app.get("/api/projects", (req, res) => {
 
 const getProjects = async (res) =>{
     const projects = await Project.find();
+    console.log("here1"); 
     res.send(projects);
 }
 
 app.post("/api/projects",upload.single("img"), (req, res) => {
     const result = validateproject(req.body);
+    console.log("here2");
 
     if (result.error) {
         console.log("here");
