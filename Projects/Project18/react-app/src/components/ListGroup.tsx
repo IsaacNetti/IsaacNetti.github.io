@@ -1,20 +1,19 @@
-import { Fragment } from "react";
+import { Fragment,useState } from "react";
 
-function ListGroup({pokemon}) {
-  if (pokemon.length === 0)
-    return (
-      <>
-        <h1>Pokemon</h1>
-        <p>No pokemon captured</p>
-      </>
-    );
+interface Props {
+  pokemon: string[];
+}
+function ListGroup({pokemon}: Props) {
 
   return (
     <>
       <h1>Pokemon</h1>
+      {pokemon.length === 0 && <p>No pokemon captured</p>}
       <ul className="list-group">
         {pokemon.map((item) => (
-          <li key={item}>{item}</li>
+          <li className="list-group-item" key={item}>
+            {item}
+          </li>
         ))}
       </ul>
     </>
