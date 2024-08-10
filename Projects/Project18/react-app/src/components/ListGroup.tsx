@@ -3,7 +3,7 @@ import Pokemon from "./Pokemon";
 
 interface Props {
   pokemonList: [];
-  deletePokemon: (id:string) => void;
+  deletePokemon: (id:any) => void;
 }
 function ListGroup({pokemonList, deletePokemon}: Props) {
 

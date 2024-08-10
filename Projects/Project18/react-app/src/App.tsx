@@ -1,16 +1,20 @@
 import ListGroup from './components/ListGroup';
 import Form from './components/Form';
 import { Fragment, useState } from "react";
+import Pokemon from './components/Pokemon';
+
+interface Pokemon {
+   id: string;
+   name: string;
+}
 
 function App (){
-   let [pokemonList, setPokemonList] = useState([]);
+   let [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
 
-  const deletePokemon=(id:string)=>{
-      if(pokemonList.size === 1) setPokemonList([]);
+  const deletePokemon=(id:any)=>{ 
       setPokemonList((currentPokemon) =>{
-         return[
-            currentPokemon.filter(pokemon => pokemon.id !== id)
-         ]
+         return currentPokemon.filter(pokemon => pokemon.id !== id)
+
       })
   }
    

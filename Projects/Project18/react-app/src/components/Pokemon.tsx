@@ -1,7 +1,7 @@
 interface Props{
     id: `${string}-${string}-${string}-${string}-${string}`;
     name: string;
-    deletePokemon: (id:string) => void;
+    deletePokemon: (id:any) => void;
 }
 function Pokemon({id,name,deletePokemon}:Props){
 
