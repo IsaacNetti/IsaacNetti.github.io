@@ -2,22 +2,29 @@ import { Dispatch, FormEvent, SetStateAction } from "react";
 import { Fragment, useState } from "react";
 
 interface Props {
-    pokemon: string[];
-    updatePokemon: (newPokemon:string) => void;
-    onSubmit: (newPokemon:String) => void;
+    onSubmit: (newPokemon:string) => void;
 }
-function Form({pokemon, onSubmit}: Props){
+function Form({onSubmit}: Props){
 let [newPokemon,setNewPokemon] = useState("");
 
+function handleSubmit(e:FormEvent){
+    e.preventDefault()
+    if(newPokemon === ""){
+        alert("Enter Pokemon name");
+        return;
+    }
+    onSubmit(newPokemon)
+    setNewPokemon("")
+}
 
     return(
-        <form >
+        <form onSubmit={(e)=> handleSubmit(e)}>
             <input 
             type="text" 
             value={newPokemon} 
             onChange ={(e) => setNewPokemon(e.target.value)}
             ></input>
-            <button onClick={onSubmit(newPokemon)} className="btn btn-primary">Add</button>
+            <button type="submit" className="btn btn-primary">Add</button>
         </form>
     );
 }

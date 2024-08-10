@@ -1,20 +1,22 @@
 import { Fragment,useState } from "react";
+import Pokemon from "./Pokemon";
 
 interface Props {
-  pokemon: string[];
+  pokemonList: [];
+  deletePokemon: (id:string) => void;
 }
-function ListGroup({pokemon}: Props) {
+function ListGroup({pokemonList, deletePokemon}: Props) {
 
   return (
     <>
       <h1>Pokemon</h1>
-      {pokemon.length === 0 && <p>No pokemon captured</p>}
+      {pokemonList.length === 0 && <p>No pokemon captured</p>}
       <ul className="list-group">
-        {pokemon.map((item) => (
-          <li className="list-group-item" key={item}>
-            {item}
-          </li>
-        ))}
+        {pokemonList.map((pokemon) => {
+          return(
+          <Pokemon name={pokemon.name} id={pokemon.id} deletePokemon={deletePokemon}/>
+          )
+        })}
       </ul>
     </>
   );

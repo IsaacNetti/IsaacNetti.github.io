@@ -1,26 +1,33 @@
 import ListGroup from './components/ListGroup';
-import Form from './components/form';
+import Form from './components/Form';
 import { Fragment, useState } from "react";
 
 function App (){
-   let [pokemon, setPokemon] = useState(['']);
-   pokemon = ["Pikachu", "Bulbasaur", "Charmander", "Squirtle", "Mudkip"];
+   let [pokemonList, setPokemonList] = useState([]);
 
-   // pokemon = []
-
-   const updatePokemon = (newPokemon:string) => {
-      pokemon.push(newPokemon);
-      setPokemon(pokemon);
-   }
-   const handleSubmit=(newPokemon:string) =>{
-      updatePokemon(newPokemon);
-      console.log(pokemon);
+  const deletePokemon=(id:string)=>{
+      if(pokemonList.size === 1) setPokemonList([]);
+      setPokemonList((currentPokemon) =>{
+         return[
+            currentPokemon.filter(pokemon => pokemon.id !== id)
+         ]
+      })
   }
+   
+   const handleSubmit=(newPokemon:string) =>{
+      console.log(pokemonList);
+      setPokemonList((currentPokemon) =>{
+         return[
+            ...currentPokemon,
+            {id:crypto.randomUUID(), name:newPokemon},
+         ]
+      })
+   }
    
    return (
    <div>
-      <ListGroup pokemon={pokemon}/>
-      <Form pokemon={pokemon} onSubmit={handleSubmit}/>
+      <ListGroup pokemonList={pokemonList} deletePokemon={deletePokemon}/>
+      <Form onSubmit={handleSubmit}/>
    </div>
    );
 }
