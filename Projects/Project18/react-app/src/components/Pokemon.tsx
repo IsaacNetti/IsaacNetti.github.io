@@ -6,7 +6,7 @@ interface Props{
 function Pokemon({id,name,deletePokemon}:Props){
 
     return(
-        <li className="list-group-item d-flex justify-content-between" key={id}>
+        <li className="list-group-item" key={id}>
             {name} <button onClick={()=>deletePokemon(id)} className="btn btn-danger">Delete</button>
           </li>
     );

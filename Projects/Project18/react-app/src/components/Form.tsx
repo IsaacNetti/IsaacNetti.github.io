@@ -18,7 +18,7 @@ function handleSubmit(e:FormEvent){
 }
 
     return(
-        <form onSubmit={(e)=> handleSubmit(e)}>
+        <form className="text-center" onSubmit={(e)=> handleSubmit(e)}>
             <input 
             type="text" 
             value={newPokemon} 

@@ -9,9 +9,9 @@ function ListGroup({pokemonList, deletePokemon}: Props) {
 
   return (
     <>
-      <h1>Pokemon</h1>
-      {pokemonList.length === 0 && <p>No pokemon captured</p>}
-      <ul className="list-group">
+      <h1 className="text-center">Pokemon</h1>
+      {pokemonList.length === 0 && <p className="text-center">No pokemon captured</p>}
+      <ul className="d-flex justify-content-around flex-wrap">
         {pokemonList.map((pokemon) => {
           return(
           <Pokemon name={pokemon.name} id={pokemon.id} deletePokemon={deletePokemon}/>
