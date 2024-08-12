@@ -1,6 +1,6 @@
 import ListGroup from './components/ListGroup';
 import Form from './components/Form';
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Pokemon from './components/Pokemon';
 
 interface Pokemon {
@@ -9,18 +9,25 @@ interface Pokemon {
 }
 
 function App (){
-   let [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
+   const [pokemonList, setPokemonList] = useState(()=>{
+      const localValue = localStorage.getItem("POKEMON")
+      if (localValue == null) return[]
+      return JSON.parse(localValue)
+   });
+
+   useEffect(()=>{
+      localStorage.setItem("POKEMON", JSON.stringify(pokemonList))
+   },[pokemonList])
 
   const deletePokemon=(id:any)=>{ 
-      setPokemonList((currentPokemon) =>{
-         return currentPokemon.filter(pokemon => pokemon.id !== id)
-
+      setPokemonList((currentPokemon: any[]) =>{
+         return currentPokemon.filter((pokemon: { id: any; }) => pokemon.id !== id)
       })
   }
    
    const handleSubmit=(newPokemon:string) =>{
       console.log(pokemonList);
-      setPokemonList((currentPokemon) =>{
+      setPokemonList((currentPokemon: any) =>{
          return[
             ...currentPokemon,
             {id:crypto.randomUUID(), name:newPokemon},

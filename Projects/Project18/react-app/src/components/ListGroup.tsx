@@ -2,7 +2,7 @@ import { Fragment,useState } from "react";
 import Pokemon from "./Pokemon";
 
 interface Props {
-  pokemonList: [];
+  pokemonList: any[];
   deletePokemon: (id:any) => void;
 }
 function ListGroup({pokemonList, deletePokemon}: Props) {
