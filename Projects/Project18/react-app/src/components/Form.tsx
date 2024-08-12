@@ -24,7 +24,7 @@ function handleSubmit(e:FormEvent){
             value={newPokemon} 
             onChange ={(e) => setNewPokemon(e.target.value)}
             ></input>
-            <button type="submit" className="btn btn-primary">Add</button>
+            <button type="submit" className="btn btn-primary">Capture</button>
         </form>
     );
 }

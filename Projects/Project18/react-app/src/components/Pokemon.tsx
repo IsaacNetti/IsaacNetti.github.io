@@ -6,8 +6,8 @@ interface Props{
 function Pokemon({id,name,deletePokemon}:Props){
 
     return(
-        <li className="list-group-item" key={id}>
-            {name} <button onClick={()=>deletePokemon(id)} className="btn btn-danger">Delete</button>
+        <li className="list-group-item text-light bg-dark rounded p-3" key={id}>
+            {name} <button onClick={()=>deletePokemon(id)} className="btn btn-danger">Release</button>
           </li>
     );
 }
