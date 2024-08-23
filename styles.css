@@ -1,0 +1,79 @@
+/* Isaac Netti CSCE 242*/
+
+/* Structure */
+body{
+    background-color: oldlace;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 90%;
+}
+
+.assignments-block{
+    background-color: grey;
+    padding: 10px;
+    margin: 15px 0px;
+    color: black;
+    align-items: center;
+}
+
+.assignments-block:hover{
+    opacity: 75%;
+}
+.assignments-block h2,.assignments-block p{
+    text-align: center;
+}
+.assignments-block img{
+    display: block;
+    margin: auto;
+    width: 80%;
+   }
+
+/* Typography */
+
+#main-header h1{
+    text-align: center;
+}
+#assignments-header{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;  
+}
+.hover:hover{
+    opacity: 75%;
+}
+.center{
+    text-align: center;
+}
+
+/* Main Navigation */
+#main-nav ul {
+    text-align: center;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type: none;
+    margin: 0%  6% ;
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+  
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+    #main-assignments{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    #main-nav li {
+        display: inline-block;
+      }
+    .assignments-block{
+        max-width: 30%;
+    }
+}
