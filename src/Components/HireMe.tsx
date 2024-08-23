@@ -23,7 +23,7 @@ export default function HireMe(){
                 <h1 className="mt-28 sm:text-4xl">LinkedIn: linkedin.com/in/inetti </h1>
             </div>
 
-            <a href="mailto:isaacnetti@gmail.com?subject=I'd like to work with you!?body=Hello! I have a job opportunity that I think you would be great for"><motion.div animate="hover" variants={variants} className="mt-10 bg-hireMePaper bg-contain bg-no-repeat w-56 h-56 mx-auto"></motion.div></a>
+            <a href="mailto:isaacnetti@gmail.com?subject=I'd like to work with you!&body=Hello! I have a job opportunity that I think you would be great for"><motion.div animate="hover" variants={variants} className="mt-10 bg-hireMePaper bg-contain bg-no-repeat w-56 h-56 mx-auto"></motion.div></a>
             <motion.div className="bg-stickyNote2 bg-contain bg-no-repeat w-36 h-36 mx-auto" animate="place" variants={variants}></motion.div>
          </div>
         </>
