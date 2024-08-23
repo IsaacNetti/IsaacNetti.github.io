@@ -31,7 +31,7 @@ export default function Projects() {
             </a>
             
         </div>
-        <a href="https://isaacnetti.github.io/projects.html"><motion.p whileHover={{scale:1.1}} className=" font-display w-min text-nowrap m-auto text-4xl">See all</motion.p></a>
+        <a href="projects.html"><motion.p whileHover={{scale:1.1}} className=" font-display w-min text-nowrap m-auto text-4xl">See all</motion.p></a>
         </>
     )
 }
